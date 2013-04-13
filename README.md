@@ -30,9 +30,14 @@ Following are some examples:
 >>> import SimpleRSA
 >>> enc =SimpleRSA.SimpleRSA(23)
 >>> enc.compute()
-
 public key (1472, 29)
 private key (1472, 914)
+
+>>> import SimpleRSA
+>>> enc =SimpleRSA.SimpleRSA(1000000)
+>>> enc.compute()
+public key (2104893971370, 308193614463)
+private key (2104893971370, 699515598545)
 
 
 >>> enc =SimpleRSA.SimpleRSA() 
