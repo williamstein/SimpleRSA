@@ -22,7 +22,7 @@ SimpleRSA
  that make the modulus of your public key. If nothing is specified, the program usses Python 3.2x 
  sys.maxsize to initliaze limit. Hence, the resulting public-key, private-key are big numbers,
 
-Then call the method compute() on that object 
+Then call the method `````Python compute()````` on that object 
 
 Following are some examples:
 
@@ -43,8 +43,6 @@ private key (10468427810168432640, 15581655766859127013)
 `````
 
 Notice that, in the third example, we do not supply an upper bound for indiividual integers that make the public 
-and private key. In this case, the program simply uses `````Python sys.maxsize````` 
-
-which is equal to 2147483647
+and private key. In this case, the program simply uses `````Python sys.maxsize````` which is equal to 2147483647
 
 
