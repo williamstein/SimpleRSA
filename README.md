@@ -26,6 +26,7 @@ Then call the method compute() on that object
 
 Following are some examples:
 
+`````Python
 >>> import SimpleRSA
 >>> enc =SimpleRSA.SimpleRSA(23)
 >>> enc.compute()
@@ -38,6 +39,8 @@ private key (1472, 914)
 >>> enc.compute()
 public key (10468427810168432640, 9554926832143394029)
 private key (10468427810168432640, 15581655766859127013)
+
+`````
 
 Notice that, in the third example, we do not supply an upper bound for indiividual integers that make the public 
 and private key. In this case, the program simply uses sys.maxsize which is equal to 2147483647
