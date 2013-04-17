@@ -24,6 +24,7 @@ class SimpleRSA:
 		self.d = 0
 		
 		
+	# The triple-quoted docstring should be *after* the def statement (before the code).
 	'''	Main method for computing public-key and private-key	and storing
 		 them as object class fields'''
 	def compute(self,limit=sys.maxsize):
@@ -124,6 +125,9 @@ class SimpleRSA:
 		Use the Sieve of Atkins algorithm to calculate all the primes upto the 
 		'limit' parameter. 
 	'''
+	# You might want to comment that using a primality test would make way more
+	# sense than finding all primes, given the problem you're solving (which is to
+	# find a random prime for crypto). 
 	def sieve_atkins(self,limit):
 		result = [2,3,5]
 		is_prime = [False]*(limit+1)
